@@ -13,7 +13,7 @@ import help from "../../assets/dialog/help.png";
 import gallery from "../../assets/folder_image.png";
 import outlook from "../../assets/outlook.png";
 import filmstrip from "../../assets/Filmstrip.png";
-import laptop from "public/images/laptop.png";
+import laptop from "../../assets/laptop.png";
 import den1 from "../../assets/den1.jpg";
 import den2 from "../../assets/den2.jpg";
 import den5 from "../../assets/den5.jpg";
