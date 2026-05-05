@@ -46,7 +46,7 @@ export default function Home() {
   };
 
   const handleOpenResume = () => {
-    window.open("./resume.pdf");
+    window.open("/resume.pdf");
   };
 
   return (

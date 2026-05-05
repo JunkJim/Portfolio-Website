@@ -140,7 +140,7 @@ const Welcome = ({ id }: props) => {
                 text={"My CV"}
                 tooltip="My Curriculum Vitae"
                 onClick={() => {
-                  window.open("./resume.pdf");
+                  window.open("/resume.pdf");
                 }}
               />
             </div>

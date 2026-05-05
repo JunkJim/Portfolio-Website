@@ -13,7 +13,6 @@ import run from "../../assets/run.png";
 import outlook from "../../assets/outlook.png";
 import ie from "../../assets/ie.png";
 import linkedin from "../../assets/linkedin.png";
-import cmd from "../../assets/cmd.png";
 import laptop from "../../assets/laptop.png";
 import paint from "../../assets/paint.png";
 import msn from "../../assets/msn.png";
@@ -39,7 +38,7 @@ const StartMenu = ({ menuControl }: StartMenuProps) => {
   };
 
   const handleOpenResume = () => {
-    window.open("./resume.pdf", "_blank");
+    window.open("/resume.pdf", "_blank");
   };
 
   const handleOpenLinkedin = () => {
