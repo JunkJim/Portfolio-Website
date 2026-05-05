@@ -18,16 +18,15 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import userprofile from "../../assets/userprofile.jpg";
 import userprofile2 from "../../assets/userprofile2.jpg";
-import userprofile3 from "../../assets/userpfrofile3.jpg";
+import userprofile3 from "../../assets/userprofile3.jpg";
 import userprofile4 from "../../assets/userprofile4.jpg";
 import userprofile5 from "../../assets/userprofile5.png";
 import userprofile6 from "../../assets/userprofile6.jpg";
 import userprofile7 from "../../assets/userprofile7.jpg";
-import userprofile8 from "../../assets/userprofile9.jpg";
+import userprofile8 from "../../assets/userprofile8.jpg";
 import userprofile9 from "../../assets/userprofile9.jpg";
 
-import ebc1 from "../../assets/ebc1.webp";
-import ebc2 from "../../assets/ebc2.webp";
+
 
 const INTRO = [
   `I’m a social-first creative specialising in video, digital storytelling and audience-led content.`,

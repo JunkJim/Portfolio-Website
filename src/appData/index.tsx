@@ -15,46 +15,46 @@ import outlook from "../../assets/outlook.png";
 import filmstrip from "../../assets/Filmstrip.png";
 import laptop from "../../assets/Laptop.png";
 
-import den1 from "../../assets/den1.png";
-import den2 from "../../assets/den2.png";
-import den5 from "../../assets/den5.png";
-import den6 from "../../assets/den6.png";
-import den7 from "../../assets/den7.png";
-import den8 from "../../assets/den8.png";
-import den9 from "../../assets/den9.png";
-import den10 from "../../assets/den10.png";
+import den1 from "../../assets/den1.jpg";
+import den2 from "../../assets/den2.jpg";
+import den5 from "../../assets/den5.jpg";
+import den6 from "../../assets/den6.jpg";
+import den7 from "../../assets/den7.jpg";
+import den8 from "../../assets/den8.jpg";
+import den9 from "../../assets/den9.jpg";
+import den10 from "../../assets/den10.jpg";
 
-import hfg_1 from "../../assets/work/hfg/1.png";
-import hfg_2 from "../../assets/work/hfg/2.png";
-import hfg_3 from "../../assets/work/hfg/3.png";
-import hfg_4 from "../../assets/work/hfg/3.png";
-import hfg_5 from "../../assets/work/hfg/5.png";
-import hfg_6 from "../../assets/work/hfg/6.png";
-import hfg_7 from "../../assets/work/hfg/7.png";
-import hfg_8 from "../../assets/work/hfg/8.png";
-import hfg_9 from "../../assets/work/hfg/9.png";
-import hfg_10 from "../../assets/work/hfg/10.png";
-import hfg_11 from "../../assets/work/hfg/11.png";
+import creel1 from "../../assets/creel1.jpg";
+import creel2 from "../../assets/creel2.jpg";
+import creel3 from "../../assets/creel3.jpg";
+import creel4 from "../../assets/creel4.jpg";
+import creel5 from "../../assets/creel5.jpg";
+import creel6 from "../../assets/creel6.jpg";
+import creel7 from "../../assets/creel7.jpg";
+import creel8 from "../../assets/creel8.jpg";
+import creel9 from "../../assets/creel9.jpg";
+import creel10 from "../../assets/creel10.jpg";
+import creel11 from "../../assets/creel11.jpg";
 import butterfly from "../../assets/butterfly.png";
-import pweb from "../../assets/pweb.png";
-import pweb2 from "../../assets/pweb2.png";
-import pweb3 from "../../assets/pweb3.png";
-import pweb4 from "../../assets/pweb4.png";
-import pweb5 from "../../assets/pweb5.png";
-import pweb6 from "../../assets/pweb6.png";
-import velo1 from "../../assets/velo1.png";
-import velo2 from "../../assets/velo2.png";
-import velo3 from "../../assets/velo3.png";
-import velo4 from "../../assets/velo4.png";
-import velo5 from "../../assets/velo5.png";
-import velo6 from "../../assets/velo6.png";
-import velo7 from "../../assets/velo7.png";
-import velo8 from "../../assets/velo8.png";
+import pweb from "../../assets/pweb.jpg";
+import pweb2 from "../../assets/pweb2.jpg";
+import pweb3 from "../../assets/pweb3.jpg";
+import pweb4 from "../../assets/pweb4.jpg";
+import pweb5 from "../../assets/pweb5.jpg";
+import pweb6 from "../../assets/pweb6.jpg";
+import velo1 from "../../assets/velo1.jpg";
+import velo2 from "../../assets/velo2.jpg";
+import velo3 from "../../assets/velo3.jpg";
+import velo4 from "../../assets/velo4.jpg";
+import velo5 from "../../assets/velo5.jpg";
+import velo6 from "../../assets/velo6.jpg";
+import velo7 from "../../assets/velo7.jpg";
+import velo8 from "../../assets/velo8.jpg";
 import velo9 from "../../assets/velo9.png";
-import velo10 from "../../assets/velo10.png";
-import velo11 from "../../assets/velo11.png";
-import velo12 from "../../assets/velo12.png";
-import velo13 from "../../assets/velo13.png";
+import velo10 from "../../assets/velo10.jpg";
+import velo11 from "../../assets/velo11.jpg";
+import velo12 from "../../assets/velo12.jpg";
+import velo13 from "../../assets/velo13.jpg";
 import art1 from "../../assets/art1.png";
 import art2 from "../../assets/art2.png";
 import art3 from "../../assets/art3.png";
@@ -82,11 +82,11 @@ import org3 from "../../assets/org3.png";
 import org4 from "../../assets/org4.png";
 import org5 from "../../assets/org5.png";
 import org6 from "../../assets/org6.png";
-import agit1 from "../../assets/agit1.png";
-import agit2 from "../../assets/agit2.png";
-import agit3 from "../../assets/agit3.png";
-import agit4 from "../../assets/agit4.png";
-import agit5 from "../../assets/agit5.png";
+import agit1 from "../../assets/agit1.jpg";
+import agit2 from "../../assets/agit2.jpg";
+import agit3 from "../../assets/agit3.jpg";
+import agit4 from "../../assets/agit4.jpg";
+import agit5 from "../../assets/agit5.jpg";
 import agit9 from "../../assets/agit9.png";
 import agit10 from "../../assets/agit10.png";
 import agit11 from "../../assets/agit11.png";
@@ -131,11 +131,11 @@ import tokyo35 from "../../assets/tokyo35.jpg";
 import tokyo36 from "../../assets/tokyo36.jpg";
 import tokyo37 from "../../assets/tokyo37.jpg";
 import tokyo38 from "../../assets/tokyo38.jpg";
-import acc1 from "../../assets/acc1.png";
-import acc2 from "../../assets/acc2.png";
-import acc3 from "../../assets/acc3.png";
-import acc4 from "../../assets/acc4.png";
-import acc5 from "../../assets/acc5.png";
+import acc1 from "../../assets/acc1.jpg";
+import acc2 from "../../assets/acc2.jpg";
+import acc3 from "../../assets/acc3.jpg";
+import acc4 from "../../assets/acc4.jpg";
+import acc5 from "../../assets/acc5.jpg";
 import sign1 from "../../assets/sign1.jpg";
 import sign2 from "../../assets/sign2.jpg";
 
@@ -399,41 +399,7 @@ export const WorkData = [
     overview: `Captured and documented a family trip to Japan through photography and video, using a mix of digital camera and camcorder footage.
   (Click image to watch video)`,
   },
-  // {
-  //   id: 3,
-  //   title: "Telegram Bot - Digital Goods Management System",
-  //   date: "Oct 2022 - Present",
-  //   gitURL: "",
-  //   techstack: [],
-  //   gallery: [MS, MS2],
-  //   overview: `I have developed a cloud inventory management system on gCloud with a Telegram bot
-  //   interface to help manage my online software distribution business. The system is able to retrieve,
-  //   restock, validate and deliver digital goods to my customers. This system has helped me to automate
-  //   crucial portions of my business processes and save me a lot of time and effort while also reducing
-  //   the delivery time of my products. To date, this system has helped me to fulfil over 1000+ orders`,
-  // },
-  // {
-  //   id: 4,
-  //   title: "Audio Visual System BASYS3 FPGA",
-  //   date: "Oct - Nov 2022",
-  //   gitURL: "https://github.com/firwer/EE2026-FPGA-Project",
-  //   techstack: [],
-  //   gallery: [
-  //     ee2026_5,
-  //     ee2026_1,
-  //     ee2026_2,
-  //     ee2026_3,
-  //     ee2026_4,
-  //     ee2026_6,
-  //     ee2026_7,
-  //   ],
-  //   overview: `In my EE2026 Digital Design Class, my partner and I collaborated on an Audio Visual System
-  //   project that encompassed both individual and team components. Our team's contribution consisted of an
-  //   interactive mouse-based drawing tool, complete with a canvas, color palette changer, rectangle drawing
-  //   tool, and brush size selection. For my individual role, I developed a P-Mod OLED digital stopwatch timer
-  //   with lap timing functionality and a whistle-based start/stop feature, powered by the Pmod MIC3.
-  //   Our project was one of the top performing projects in our cohort.`,
-  // },
+
   {
     id: 5,
     title: "Sign Painting - Local Business",
@@ -452,47 +418,6 @@ export const WorkData = [
     ],
     overview: `Coming Soon!`,
   },
-  {
-    // id: 6,
-    // title: "CG2111A - Alex Search & Rescue Lidar Robot Project",
-    // date: "Feb 2023",
-    // gitURL: "https://github.com/firwer/CG2111A-Alex-Lidar-Project",
-    // techstack: [],
-    // gallery: [cg1_2, cg2_2, cg3_2, cg4_2, cg5_2, cg6_2],
-    // overview: `We created a robot, named Alex, that is intended to be a “search and rescue” robot that
-    //   can be piloted around remotely in an unknown environment. Its role is to serve as an
-    //   “eye” of the user and provide real-time information on the environment to the user to
-    //   allow him/her to navigate the whole terrain and draw a detailed map of the environment.\n
-    //   The robot is equipped with a LIDAR device to map the said unknown environment. The user would
-    //   then be able to send movement commands to Alex and receive environment information (the angle
-    //   and distance to the nearest obstacle in any particular direction) back to the user.\n
-    //   Through this project, I have learnt how to integrate Lidar, Arduino, Raspberry Pi and ROS into
-    //   a single operational vehicle and most importantly, how to write baremetal code and deal with USART
-    //   communication between our Compuer, Arduino and Raspberry Pi.`,
-  },
-  // {
-  //   id: 7,
-  //   title: "CG1111A - mBot Vehicle Maze Navigator",
-  //   date: "Aug - Nov 2021",
-  //   gitURL: "",
-  //   techstack: [],
-  //   gallery: [cg6, cg1, cg2, cg3, cg4, cg5],
-  //   overview: `Our team and I built an mBot vehicle that is able to navigate through a maze and perform specific
-  //     action based on the colour of the ground it is on. The mBot is able to detect the colour of the
-  //     ground using a colour sensor and move in different directions with the help of 2 IR sensor and 1
-  //     Ultrasonic sensor.`,
-  // },
-  // {
-  //   id: 8,
-  //   title: "EG1311",
-  //   date: "Aug - Nov 2021",
-  //   gitURL: "",
-  //   techstack: [],
-  //   gallery: [eg_1, eg_2, eg_3, eg_4, eg_5, eg_6],
-  //   overview: `My team and I built a robot vehicle powered using Arduino and 4 DC motors. Our vehicle is able to
-  //     move through a series of incline ramps, stop at a designated point using proximity sensor and fire
-  //     a ping-pong ball through a quick-release catapult that was built with a servo-motor.`,
-  // },
 
   {
     id: 9,
@@ -508,17 +433,17 @@ export const WorkData = [
       TechIcon.PHOTOSHOP,
     ],
     gallery: [
-      { img: hfg_1, link: "https://youtu.be/v8OZ1N0sFWc" },
-      { img: hfg_2, link: "https://youtu.be/v8OZ1N0sFWc" },
-      { img: hfg_3, link: "https://youtu.be/v8OZ1N0sFWc" },
-      { img: hfg_4, link: "https://youtu.be/v8OZ1N0sFWc" },
-      { img: hfg_5, link: "https://youtu.be/v8OZ1N0sFWc" },
-      { img: hfg_6, link: "https://youtu.be/v8OZ1N0sFWc" },
-      { img: hfg_7, link: "https://youtu.be/v8OZ1N0sFWc" },
-      { img: hfg_8, link: "https://youtu.be/v8OZ1N0sFWc" },
-      { img: hfg_9, link: "https://youtu.be/v8OZ1N0sFWc" },
-      { img: hfg_10, link: "https://youtu.be/v8OZ1N0sFWc" },
-      { img: hfg_11, link: "https://youtu.be/v8OZ1N0sFWc" },
+      { img: creel1, link: "https://youtu.be/v8OZ1N0sFWc" },
+      { img: creel2, link: "https://youtu.be/v8OZ1N0sFWc" },
+      { img: creel3, link: "https://youtu.be/v8OZ1N0sFWc" },
+      { img: creel4, link: "https://youtu.be/v8OZ1N0sFWc" },
+      { img: creel5, link: "https://youtu.be/v8OZ1N0sFWc" },
+      { img: creel6, link: "https://youtu.be/v8OZ1N0sFWc" },
+      { img: creel7, link: "https://youtu.be/v8OZ1N0sFWc" },
+      { img: creel8, link: "https://youtu.be/v8OZ1N0sFWc" },
+      { img: creel9, link: "https://youtu.be/v8OZ1N0sFWc" },
+      { img: creel10, link: "https://youtu.be/v8OZ1N0sFWc" },
+      { img: creel11, link: "https://youtu.be/v8OZ1N0sFWc" },
     ],
     video: "/joshuajimcreativereel.mp4",
     overview: `Creative reel featuring a mix of agency, freelance, and personal work. At dentsu, I worked both in front of and behind the camera planning, filming, and directing content, as well as producing videos for internal town halls and building a trend and influencer search tool using front-end skills. My freelance work with A Glitch spans production, vox pops, filming, editing, and asset creation, alongside a selection of personal projects. (Click image to watch video) `,
@@ -659,15 +584,15 @@ This rollout improved understanding from the outset, driving stronger engagement
     ],
     gallery: [
       {
+        img: art6,
+        link: "https://drive.google.com/file/d/15blkRGsHqwMKvxwsPflmpNp2ERYclYd5/view?usp=drive_link",
+      },
+      {
+        img: art8,
+        link: "https://drive.google.com/file/d/15blkRGsHqwMKvxwsPflmpNp2ERYclYd5/view?usp=drive_link",
+      },
+      {
         img: art1,
-        link: "https://drive.google.com/file/d/15blkRGsHqwMKvxwsPflmpNp2ERYclYd5/view?usp=drive_link",
-      },
-      {
-        img: art2,
-        link: "https://drive.google.com/file/d/15blkRGsHqwMKvxwsPflmpNp2ERYclYd5/view?usp=drive_link",
-      },
-      {
-        img: art3,
         link: "https://drive.google.com/file/d/15blkRGsHqwMKvxwsPflmpNp2ERYclYd5/view?usp=drive_link",
       },
       {
@@ -679,15 +604,11 @@ This rollout improved understanding from the outset, driving stronger engagement
         link: "https://drive.google.com/file/d/15blkRGsHqwMKvxwsPflmpNp2ERYclYd5/view?usp=drive_link",
       },
       {
-        img: art6,
+        img: art3,
         link: "https://drive.google.com/file/d/15blkRGsHqwMKvxwsPflmpNp2ERYclYd5/view?usp=drive_link",
       },
       {
         img: art7,
-        link: "https://drive.google.com/file/d/15blkRGsHqwMKvxwsPflmpNp2ERYclYd5/view?usp=drive_link",
-      },
-      {
-        img: art8,
         link: "https://drive.google.com/file/d/15blkRGsHqwMKvxwsPflmpNp2ERYclYd5/view?usp=drive_link",
       },
       {
@@ -889,106 +810,70 @@ export const WorkAccordionContent = [
     type: WorkType.PERSONAL,
     icon: butterfly,
     title: "Windows XP Personal Website",
-    content: WorkData[WorkData.findIndex((x) => x.id === 1)],
+    content: WorkData.find((x) => x.id === 1)!,
   },
   {
     id: 2,
     type: WorkType.PERSONAL,
     icon: filmstrip,
     title: "Japan Trip",
-    content: WorkData[WorkData.findIndex((x) => x.id === 2)],
+    content: WorkData.find((x) => x.id === 2)!,
   },
-  // {
-  //   id: 3,
-  //   type: WorkType.PERSONAL,
-  //   icon: paintbrush,
-  //   title: "Sign Painting",
-  //   content: WorkData[WorkData.findIndex((x) => x.id === 3)],
-  // },
-  // {
-  //   id: 4,
-  //   type: WorkType.PERSONAL,
-  //   icon: file,
-  //   title: "A Glitch",
-  //   content: WorkData[WorkData.findIndex((x) => x.id === 4)],
-  // },
   {
     id: 5,
     type: WorkType.SOON,
     icon: paintbrush,
     title: "Sign Painting",
-    content: WorkData[WorkData.findIndex((x) => x.id === 5)],
+    content: WorkData.find((x) => x.id === 5)!,
   },
-  // {
-  //   id: 6,
-  //   type: WorkType.SCHOOL,
-  //   icon: file,
-  //   title: "CG2111A Engineering Principles II",
-  //   content: WorkData[WorkData.findIndex((x) => x.id === 6)],
-  // },
-  // {
-  //   id: 7,
-  //   type: WorkType.SCHOOL,
-  //   icon: file,
-  //   title: "CG1111A Engineering Principles I",
-  //   content: WorkData[WorkData.findIndex((x) => x.id === 7)],
-  // },
-  // {
-  //   id: 8,
-  //   type: WorkType.SCHOOL,
-  //   icon: file,
-  //   title: "EG1311 Design and Make",
-  //   content: WorkData[WorkData.findIndex((x) => x.id === 8)],
-  // },
   {
     id: 9,
     type: WorkType.WORK,
     icon: filmstrip,
     title: "Creative Reel",
-    content: WorkData[WorkData.findIndex((x) => x.id === 9)],
+    content: WorkData.find((x) => x.id === 9)!,
   },
   {
     id: 10,
     type: WorkType.WORK,
     icon: laptop,
     title: "Dentsu - Town Hall",
-    content: WorkData[WorkData.findIndex((x) => x.id === 10)],
+    content: WorkData.find((x) => x.id === 10)!,
   },
-
   {
     id: 11,
     type: WorkType.WORK,
     icon: laptop,
     title: "Dentsu - Velocity",
-    content: WorkData[WorkData.findIndex((x) => x.id === 11)],
+    content: WorkData.find((x) => x.id === 11)!,
   },
   {
     id: 12,
     type: WorkType.WORK,
     icon: laptop,
     title: "Dentsu - Artemis",
-    content: WorkData[WorkData.findIndex((x) => x.id === 12)],
+    content: WorkData.find((x) => x.id === 12)!,
   },
   {
     id: 13,
     type: WorkType.WORK,
     icon: laptop,
     title: "Dentsu - Social",
-    content: WorkData[WorkData.findIndex((x) => x.id === 13)],
+    content: WorkData.find((x) => x.id === 13)!,
   },
   {
     id: 14,
     type: WorkType.WORK,
     icon: laptop,
     title: "Dentsu - Accelerators",
-    content: WorkData[WorkData.findIndex((x) => x.id === 14)],
+    content: WorkData.find((x) => x.id === 14)!,
   },
   {
     id: 15,
     type: WorkType.WORK,
     icon: paintbrush,
     title: "A Glitch",
-    content: WorkData[WorkData.findIndex((x) => x.id === 15)],
+    content: WorkData.find((x) => x.id === 15)!,
   },
 ] as WorkFile[];
 
@@ -1178,5 +1063,4 @@ export const PhotoCollection = [
     date: "May 2025",
     img: tokyo38,
   },
-  ,
 ] as GalleryImage[];

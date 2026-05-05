@@ -1,84 +1,98 @@
-import { useState } from "react";
-import { StaticImageData } from "next/image";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import styles from "./Carousel.module.css";
 import Spinner from "components/Spinner/Spinner";
 import { GalleryItem } from "@/types";
 
 interface Props {
-  images: GalleryItem[];
+  images?: GalleryItem[]; // make optional for safety
 }
 
 const Carousel = ({ images }: Props) => {
-  const [currentImage, setCurrentImage] = useState<number>(0);
-
-  const handlePrevClick = () => {
-    if (currentImage === 0) {
-      setCurrentImage(images.length - 1);
-    } else {
-      setCurrentImage((prev) => prev - 1);
-    }
-  };
-  const handleNextClick = () => {
-    if (currentImage === images.length - 1) {
-      setCurrentImage(0);
-    } else {
-      setCurrentImage((prev) => prev + 1);
-    }
-  };
+  const [currentIndex, setCurrentIndex] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
 
-  const handleLoadingComplete = () => {
-    setIsLoading(false);
+  // ✅ Guard: no images yet
+  if (!images || images.length === 0) {
+    return <Spinner />;
+  }
+
+  // ✅ Keep index in bounds if images change
+  useEffect(() => {
+    if (currentIndex >= safeImages.length) {
+      setCurrentIndex(0);
+    }
+  }, [images, currentIndex]);
+
+  const safeImages = (images || []).filter((img) => img && img.img);
+
+  if (safeImages.length === 0) {
+    return <Spinner />;
+  }
+
+  const current = safeImages[currentIndex] || safeImages[0];
+
+  const handlePrev = () => {
+    setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
+    setIsLoading(true);
+  };
+
+  const handleNext = () => {
+    setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
+    setIsLoading(true);
+  };
+
+  const handleDotClick = (index: number) => {
+    setCurrentIndex(index);
+    setIsLoading(true);
   };
 
   return (
     <div className={styles.carousel}>
       {isLoading && <Spinner />}
+
       <div className={styles.imageContainer}>
         <Image
-          src={images[currentImage].img}
-          alt="carousel"
-          onLoadingComplete={handleLoadingComplete}
+          src={current.img}
+          alt={`carousel-${currentIndex}`}
+          onLoadingComplete={() => setIsLoading(false)}
           onClick={() => {
-            const link = images[currentImage].link;
-            if (link) window.open(link, "_blank", "noopener,noreferrer");
+            if (current.link) {
+              window.open(current.link, "_blank", "noopener,noreferrer");
+            }
           }}
-          style={{ cursor: images[currentImage].link ? "pointer" : "default" }}
+          style={{
+            cursor: current.link ? "pointer" : "default",
+          }}
         />
       </div>
-      {/* <div className={styles.imageContainer}>
-        <Image
-          src={images[currentImage].img}
-          alt="carousel"
-          onLoadingComplete={handleLoadingComplete}
-        />
-      </div> */}
+
       <div className={styles.controls}>
-        <div
+        <button
           className={styles.controlButton}
-          onClick={handlePrevClick}
+          onClick={handlePrev}
           aria-label="Previous Image"
         >
           &#10094;
-        </div>
-        <div
+        </button>
+
+        <button
           className={styles.controlButton}
-          onClick={handleNextClick}
+          onClick={handleNext}
           aria-label="Next Image"
         >
           &#10095;
-        </div>
+        </button>
       </div>
+
       <div className={styles.dots}>
         {images.map((_, index) => (
           <div
             key={index}
             className={`${styles.dot} ${
-              currentImage === index ? styles.active : ""
+              index === currentIndex ? styles.active : ""
             }`}
-            onClick={() => setCurrentImage(index)}
-            aria-label={`Image ${index + 1}`}
+            onClick={() => handleDotClick(index)}
           />
         ))}
       </div>
