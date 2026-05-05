@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { Inter } from "next/font/google";
 import StartBar from "components/StartBar/StartBar";
 // import "xp.css/dist/XP.css";
 import styles from "../styles/Home.module.css";
@@ -6,10 +7,12 @@ import DesktopIcon from "components/DesktopIcon/DesktopIcon";
 import mycomputer from "../../assets/mycomputer.png";
 import bin from "../../assets/recycling_bin.png";
 import pdf from "../../assets/pdf.png";
+import github from "../../assets/github.png";
 import laptop from "../../assets/laptop.png";
 import solitare from "../../assets/solitaire.png";
 import linkedin from "../../assets/linkedin.png";
 import WinForm from "components/WinForm/WinForm";
+import { useEffect, useState } from "react";
 import store from "@/redux/store";
 import { AppDirectory } from "@/appData";
 import { App, RootState, Tab } from "@/types";
