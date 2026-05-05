@@ -65,7 +65,6 @@ export type WorkContent = {
   techstack: string[];
   overview: string;
 };
-
 export type GalleryImage = {
   id: number;
   title: string;
@@ -73,4 +72,5 @@ export type GalleryImage = {
   location: string;
   date: string;
   img: StaticImageData;
+  link?: string;
 };
