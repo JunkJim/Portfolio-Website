@@ -1,5 +1,5 @@
 import styles from "./StartMenu.module.css";
-import userprofile from "../../assets/userprofile.jpg";
+import userprofile from "public/images/userprofilestart.jpg";
 import folder from "../../assets/folder_plain.png";
 import StartMenuItem from "components/StartMenuItem/StartMenuItem";
 import recentdoc from "../../assets/recentdoc.png";
@@ -116,7 +116,7 @@ const StartMenu = ({ menuControl }: StartMenuProps) => {
               type={2}
             />
             <StartMenuItem
-              title="Video Gallery"
+              title="My Work"
               onClick={() => handleRunApp(2)}
               icon={laptop}
               type={2}

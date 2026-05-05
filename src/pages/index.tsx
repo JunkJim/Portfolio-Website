@@ -39,7 +39,7 @@ export default function Home() {
 
   const handleOpenLinkedin = () => {
     window.open(
-      "https://https://www.linkedin.com/in/joshua-jim-j220367/",
+      "https://www.linkedin.com/in/joshua-jim-j220367/",
       "_blank",
       "noreferrer",
     );

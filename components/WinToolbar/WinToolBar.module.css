@@ -6,7 +6,7 @@
 }
 
 .winlogo {
-  background: url(../../assets/winlogo.png) no-repeat center;
+  background: url("/images/winlogo.png") no-repeat center;
   background-size: cover;
   width: 55px;
   height: 98%;
