@@ -12,7 +12,7 @@ import Carousel from "components/Carousel/Carousel";
 import { useSelector } from "react-redux";
 import { setBackBtn } from "@/redux/tabSlice";
 import store from "@/redux/store";
-import { GalleryItem } from "@/types";
+import { GalleryImage } from "@/types";
 const loaderProp = ({ src }: any) => {
   return src;
 };
@@ -26,7 +26,7 @@ const MyWork = ({ id }: Props) => {
     title: "",
     date: "",
     gitURL: "",
-    gallery: [] as GalleryItem[],
+    gallery: [],
     techstack: [],
     overview: "",
   });
@@ -40,7 +40,7 @@ const MyWork = ({ id }: Props) => {
     if (currDisplay.title !== "" && !backBtnActive) {
       store.dispatch(setBackBtn({ id: id, backBtnActive: true }));
     }
-  }, [currDisplay]);
+  }, [currDisplay, backBtnActive, id]);
   useEffect(() => {
     if (!backBtnActive) {
       setCurrDisplay({
@@ -48,7 +48,7 @@ const MyWork = ({ id }: Props) => {
         title: "",
         date: "",
         gitURL: "",
-        gallery: [] as GalleryItem[],
+        gallery: [],
         techstack: [],
         overview: "",
       });
