@@ -105,7 +105,7 @@ import tokyo12 from "../../assets/tokyo12.jpg";
 import tokyo13 from "../../assets/tokyo13.jpg";
 import tokyo14 from "../../assets/tokyo14.jpg";
 import tokyo15 from "../../assets/tokyo15.jpg";
-import tokyo16 from "../../../assets/tokyo16.jpg";
+import tokyo16 from "../../assets/tokyo16.jpg";
 import tokyo17 from "../../assets/tokyo17.jpg";
 import tokyo18 from "../../assets/tokyo18.jpg";
 import tokyo19 from "../../assets/tokyo19.jpg";
