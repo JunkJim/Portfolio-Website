@@ -13,7 +13,7 @@ import run from "../../assets/run.png";
 import outlook from "../../assets/outlook.png";
 import ie from "../../assets/ie.png";
 import linkedin from "../../assets/linkedin.png";
-import laptop from "../../assets/laptop.png";
+import laptop from "public/images/laptop.png";
 import paint from "../../assets/paint.png";
 import msn from "../../assets/msn.png";
 import pdf from "../../assets/pdf.png";
