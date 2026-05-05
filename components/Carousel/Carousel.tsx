@@ -1,44 +1,41 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import styles from "./Carousel.module.css";
 import Spinner from "components/Spinner/Spinner";
-import { GalleryItem } from "@/types";
+import { GalleryImage } from "@/types";
 
 interface Props {
-  images?: GalleryItem[]; // make optional for safety
+  images?: GalleryImage[];
 }
 
 const Carousel = ({ images }: Props) => {
+  // Always normalise data first
+  const safeImages = images ?? [];
+
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
 
-  // ✅ Guard: no images yet
-  if (!images || images.length === 0) {
-    return <Spinner />;
-  }
-
-  // ✅ Keep index in bounds if images change
+  // Keep index in bounds whenever images change
   useEffect(() => {
     if (currentIndex >= safeImages.length) {
       setCurrentIndex(0);
     }
-  }, [images, currentIndex]);
+  }, [currentIndex, safeImages.length]);
 
-  const safeImages = (images || []).filter((img) => img && img.img);
-
+  // Early return AFTER hooks (important rule)
   if (safeImages.length === 0) {
     return <Spinner />;
   }
 
-  const current = safeImages[currentIndex] || safeImages[0];
+  const currentImage = safeImages[currentIndex];
 
   const handlePrev = () => {
-    setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
+    setCurrentIndex((prev) => (prev === 0 ? safeImages.length - 1 : prev - 1));
     setIsLoading(true);
   };
 
   const handleNext = () => {
-    setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
+    setCurrentIndex((prev) => (prev === safeImages.length - 1 ? 0 : prev + 1));
     setIsLoading(true);
   };
 
@@ -47,22 +44,24 @@ const Carousel = ({ images }: Props) => {
     setIsLoading(true);
   };
 
+  const handleImageClick = () => {
+    if (currentImage?.link) {
+      window.open(currentImage.link, "_blank", "noopener,noreferrer");
+    }
+  };
+
   return (
     <div className={styles.carousel}>
       {isLoading && <Spinner />}
 
       <div className={styles.imageContainer}>
         <Image
-          src={current.img}
+          src={currentImage.img}
           alt={`carousel-${currentIndex}`}
           onLoadingComplete={() => setIsLoading(false)}
-          onClick={() => {
-            if (current.link) {
-              window.open(current.link, "_blank", "noopener,noreferrer");
-            }
-          }}
+          onClick={handleImageClick}
           style={{
-            cursor: current.link ? "pointer" : "default",
+            cursor: currentImage.link ? "pointer" : "default",
           }}
         />
       </div>
@@ -86,7 +85,7 @@ const Carousel = ({ images }: Props) => {
       </div>
 
       <div className={styles.dots}>
-        {images.map((_, index) => (
+        {safeImages.map((_, index) => (
           <div
             key={index}
             className={`${styles.dot} ${
