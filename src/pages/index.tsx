@@ -9,7 +9,6 @@ import bin from "../../assets/recycling_bin.png";
 import pdf from "../../assets/pdf.png";
 import github from "../../assets/github.png";
 import laptop from "../../assets/laptop.png";
-import solitare from "../../assets/solitaire.png";
 import linkedin from "../../assets/linkedin.png";
 import WinForm from "components/WinForm/WinForm";
 import { useEffect, useState } from "react";
@@ -24,6 +23,7 @@ import MyWork from "@/programs/MyWork";
 import MsgBox from "components/MsgBox/MsgBox";
 import Welcome from "@/programs/Welcome";
 import MyGallery from "@/programs/MyGallery";
+import help from "../../assets/dialog/help.png";
 export default function Home() {
   const Tabs = useSelector((state: RootState) => state.tab.tray);
   const currTabID = useSelector((state: RootState) => state.tab.id);
@@ -104,9 +104,9 @@ export default function Home() {
 
           <DesktopIcon
             appID={6}
-            doubleClick={() => void 0}
-            title="My Hobbies"
-            img={solitare}
+            doubleClick={() => handleRunApp(0)}
+            title="Start Guide"
+            img={help}
           />
           {Tabs.map((tab, index) => {
             return tab.isMinimized ? (

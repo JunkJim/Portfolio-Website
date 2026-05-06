@@ -4,9 +4,6 @@ import linkedin from "../../assets/linkedin.png";
 import outlook from "../../assets/outlook_large.png";
 import gallery from "../../assets/folder_image.png";
 import pdf from "../../assets/pdf.png";
-import github from "../../assets/github.png";
-import cmd from "../../assets/cmd.png";
-import users from "../../assets/users.png";
 import butterfly from "../../assets/butterfly.png";
 import { AppDirectory } from "@/appData";
 import store from "@/redux/store";
@@ -25,8 +22,7 @@ import userprofile6 from "../../assets/userprofile6.jpg";
 import userprofile7 from "../../assets/userprofile7.jpg";
 import userprofile8 from "../../assets/userprofile8.jpg";
 import userprofile9 from "../../assets/userprofile9.jpg";
-
-
+import laptop from "../../assets/laptop.png";
 
 const INTRO = [
   `I’m a social-first creative specialising in video, digital storytelling and audience-led content.`,
@@ -111,18 +107,7 @@ const Welcome = ({ id }: props) => {
                 tooltip="Who am I?"
                 onClick={handleSwitchView}
               />
-              {/* <WelcomeIcon
-                img={github}
-                text={"My GitHub Profile"}
-                tooltip="My Brain Dump"
-                onClick={() => {
-                  window.open(
-                    "https://github.com/firwer",
-                    "_blank",
-                    "noreferrer",
-                  );
-                }}
-              /> */}
+
               <WelcomeIcon
                 img={linkedin}
                 text={"My LinkedIn"}
@@ -146,7 +131,7 @@ const Welcome = ({ id }: props) => {
             </div>
             <div className={styles.rightpanel}>
               <WelcomeIcon
-                img={github}
+                img={laptop}
                 text={"My Work"}
                 tooltip="Interesting projects I have done"
                 onClick={() => handleRunApp(2)}
