@@ -2,7 +2,8 @@
 
 module.exports = {
   reactStrictMode: true,
-  webpack: (config, options) => {
+
+  webpack: (config) => {
     config.module.rules.push({
       test: /\.pdf$/i,
       type: "asset/source",
@@ -10,10 +11,25 @@ module.exports = {
 
     return config;
   },
+
   env: {
     BASE_URL: process.env.BASE_URL,
   },
+
   images: {
-    domains: ["img.shields.io", "pohwp.dev", "www.pohwp.dev"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "img.shields.io",
+      },
+      {
+        protocol: "https",
+        hostname: "pohwp.dev",
+      },
+      {
+        protocol: "https",
+        hostname: "www.pohwp.dev",
+      },
+    ],
   },
 };
